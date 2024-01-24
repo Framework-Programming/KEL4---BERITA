@@ -42,14 +42,16 @@
     <main>
         <div class="container pt-4">
             <h1>Data Berita</h1>
+            <div class="divider py-1 bg-success"></div>
             <div class="card">
                 <div class="card-body">
+                    
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                    <div id="berita-list"></div>
-                    <!-- <div class="row mt-3">
+                    
+                    <div class="row mt-3">
                         <div class="col-sm-6 mb-3 mb-sm-0">
                             <div class="card">
                                 <div class="card-body">
@@ -62,6 +64,9 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">TITLE - LOREM IPSUM</h5>
+                                    <div class="label">
+                                        <p class="element-jan-antonio">16 Jan 2023 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alexander</p>
+                                    </div>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
                                         eaque velit voluptates! Accusantium animi laboriosam possimus beatae nostrum id
                                         maiores quae autem reprehenderit quis, provident dolor quia veritatis magnam
@@ -70,14 +75,219 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
-
+                    </div>
+                    <!-- Tambahkan baris ini untuk menampilkan modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">TITLE - LOREM IPSUM</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Konten pop-up disini -->
+                                    <p> <div class="row mt-3">
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <img src="https://images.bisnis.com/posts/2020/07/26/1271207/menaramui-260718-1.jpg"
+                                                        class="img-fluid" alt="Main News Image" height="600" width="600" />
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                                eaque velit voluptates! Accusantium animi laboriosam possimus beatae nostrum id
+                                                maiores quae autem reprehenderit quis, provident dolor quia veritatis magnam
+                                                esse?</p>
+                                        </div></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Akhir bagian modal -->
+                    <div class="row mt-3">
+                        <!-- Sisipkan kode untuk kartu berita kedua disini -->
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://images.bisnis.com/posts/2020/07/26/1271207/menaramui-260718-1.jpg"
+                                            class="img-fluid" alt="Main News Image" height="600" width="600" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">TITLE - LOREM IPSUM</h5>
+                                        <div class="label">
+                                            <p class="element-jan-antonio">16 Jan 2023 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alexander</p>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                            eaque velit voluptates! Accusantium animi laboriosam possimus beatae nostrum id
+                                            maiores quae autem reprehenderit quis, provident dolor quia veritatis magnam
+                                            esse?</p>
+                                        <a href="#" class="btn btn-secondary">Lihat Selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tambahkan baris ini untuk menampilkan modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">TITLE - LOREM IPSUM</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Konten pop-up disini -->
+                                        <p> <div class="row mt-3">
+                                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <img src="https://images.bisnis.com/posts/2020/07/26/1271207/menaramui-260718-1.jpg"
+                                                            class="img-fluid" alt="Main News Image" height="600" width="600" />
+                                                    </div>
+                                                </div>
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                                    eaque velit voluptates! Accusantium animi laboriosam possimus beatae nostrum id
+                                                    maiores quae autem reprehenderit quis, provident dolor quia veritatis magnam
+                                                    esse?</p>
+                                            </div></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <!-- Sisipkan kode untuk kartu berita ketiga disini -->
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://images.bisnis.com/posts/2020/07/26/1271207/menaramui-260718-1.jpg"
+                                        class="img-fluid" alt="Main News Image" height="600" width="600" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">TITLE - LOREM IPSUM</h5>
+                                    <div class="label">
+                                        <p class="element-jan-antonio">16 Jan 2023 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alexander</p>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                        eaque velit voluptates! Accusantium animi laboriosam possimus beatae nostrum id
+                                        maiores quae autem reprehenderit quis, provident dolor quia veritatis magnam
+                                        esse?</p>
+                                    <a href="#" class="btn btn-secondary">Lihat Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tambahkan baris ini untuk menampilkan modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">TITLE - LOREM IPSUM</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Konten pop-up disini -->
+                                    <p> <div class="row mt-3">
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <img src="https://images.bisnis.com/posts/2020/07/26/1271207/menaramui-260718-1.jpg"
+                                                        class="img-fluid" alt="Main News Image" height="600" width="600" />
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                                eaque velit voluptates! Accusantium animi laboriosam possimus beatae nostrum id
+                                                maiores quae autem reprehenderit quis, provident dolor quia veritatis magnam
+                                                esse?</p>
+                                        </div></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
+                    </div>
+                    <div class="row mt-3">
+                        <!-- Sisipkan kode untuk kartu berita keempat disini -->
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://images.bisnis.com/posts/2020/07/26/1271207/menaramui-260718-1.jpg"
+                                        class="img-fluid" alt="Main News Image" height="600" width="600" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">TITLE - LOREM IPSUM</h5>
+                                    <div class="label">
+                                        <p class="element-jan-antonio">16 Jan 2023 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alexander</p>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                        eaque velit voluptates! Accusantium animi laboriosam possimus beatae nostrum id
+                                        maiores quae autem reprehenderit quis, provident dolor quia veritatis magnam
+                                        esse?</p>
+                                    <a href="#" class="btn btn-secondary">Lihat Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tambahkan baris ini untuk menampilkan modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">TITLE - LOREM IPSUM</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Konten pop-up disini -->
+                                    <p> <div class="row mt-3">
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <img src="https://images.bisnis.com/posts/2020/07/26/1271207/menaramui-260718-1.jpg"
+                                                        class="img-fluid" alt="Main News Image" height="600" width="600" />
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                                eaque velit voluptates! Accusantium animi laboriosam possimus beatae nostrum id
+                                                maiores quae autem reprehenderit quis, provident dolor quia veritatis magnam
+                                                esse?</p>
+                                        </div></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                </div>
     </main>
-    <footer class="mt-5 pt-3 footer-sticky">
+    <footer class="pt-3 footer-sticky">
         <div class="container">
             <div class="row mt-4 mb-4">
                 <div class="col-12">
@@ -148,7 +358,14 @@
 
     <script src="https://kit.fontawesome.com/c055542fa3.js" crossorigin="anonymous"></script>
     <script src="scripts_user.js"></script>
-    <script src="api_data.js"></script>
+
+    <script>
+        // Menampilkan pop-up saat tombol "Lihat Selengkapnya" diklik
+        $('.btn-secondary').on('click', function () {
+            // Menggunakan modal Bootstrap
+            $('#myModal').modal('show');
+        });
+    </script>
 </body>
 
 </html>
